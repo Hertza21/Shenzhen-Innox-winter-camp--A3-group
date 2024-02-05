@@ -1,0 +1,26 @@
+cmake_minimum_required(VERSION 3.5)
+project(myctrl)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  std_msgs
+)
+
+# 添加自定义消息和srv（如果有的话）
+generate_messages(DEPENDENCIES
+  std_msgs
+)
+
+# 指定源代码文件
+add_executable(myctrl src/ctrl.cpp)
+
+# 链接所需的库
+target_link_libraries(myctrl
+  ${catkin_LIBRARIES}
+)
+
+# 将节点添加到ROS工作空间中
+install(TARGETS myctrl
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

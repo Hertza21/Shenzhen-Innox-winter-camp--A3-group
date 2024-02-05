@@ -1,0 +1,130 @@
+<launch>
+
+    <!-- Run the map server -->
+    <node pkg="map_server" type="map_server" name="map_saver" args="$(find map_server)/test/rm2022wc.yaml"/>  
+
+    <!-- Run the static TF publisher from map to tags -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_101" args="0.3 0.3 0 1.57 0 0 map tag_101" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_102" args="0.9 0.3 0 1.57 0 0 map tag_102" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_103" args="1.5 0.3 0 1.57 0 0 map tag_103" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_104" args="2.1 0.3 0 1.57 0 0 map tag_104" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_105" args="2.7 0.3 0 1.57 0 0 map tag_105" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_106" args="3.3 0.3 0 1.57 0 0 map tag_106" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_107" args="3.9 0.3 0 1.57 0 0 map tag_107" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_108" args="4.5 0.3 0 1.57 0 0 map tag_108" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_109" args="5.1 0.3 0 1.57 0 0 map tag_109" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_110" args="5.7 0.3 0 1.57 0 0 map tag_110" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_111" args="6.3 0.3 0 1.57 0 0 map tag_111" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_112" args="6.9 0.3 0 1.57 0 0 map tag_112" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_113" args="7.5 0.3 0 1.57 0 0 map tag_113" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_114" args="0.3 0.9 0 1.57 0 0 map tag_114" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_115" args="0.9 0.9 0 1.57 0 0 map tag_115" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_116" args="1.5 0.9 0 1.57 0 0 map tag_116" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_117" args="2.1 0.9 0 1.57 0 0 map tag_117" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_118" args="2.7 0.9 0 1.57 0 0 map tag_118" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_119" args="3.3 0.9 0 1.57 0 0 map tag_119" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_120" args="3.9 0.9 0 1.57 0 0 map tag_120" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_121" args="4.5 0.9 0 1.57 0 0 map tag_121" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_122" args="5.1 0.9 0 1.57 0 0 map tag_122" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_123" args="5.7 0.9 0 1.57 0 0 map tag_123" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_124" args="6.3 0.9 0 1.57 0 0 map tag_124" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_125" args="6.9 0.9 0 1.57 0 0 map tag_125" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_126" args="7.5 0.9 0 1.57 0 0 map tag_126" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_127" args="0.3 1.5 0 1.57 0 0 map tag_127" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_128" args="0.9 1.5 0 1.57 0 0 map tag_128" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_129" args="1.5 1.5 0 1.57 0 0 map tag_129" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_130" args="2.1 1.5 0 1.57 0 0 map tag_130" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_131" args="2.7 1.5 0 1.57 0 0 map tag_131" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_132" args="3.3 1.5 0 1.57 0 0 map tag_132" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_133" args="3.9 1.5 0 1.57 0 0 map tag_133" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_134" args="4.5 1.5 0 1.57 0 0 map tag_134" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_135" args="5.1 1.5 0 1.57 0 0 map tag_135" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_136" args="5.7 1.5 0 1.57 0 0 map tag_136" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_137" args="6.3 1.5 0 1.57 0 0 map tag_137" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_138" args="6.9 1.5 0 1.57 0 0 map tag_138" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_139" args="7.5 1.5 0 1.57 0 0 map tag_139" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_140" args="0.3 2.1 0 1.57 0 0 map tag_140" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_141" args="0.9 2.1 0 1.57 0 0 map tag_141" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_142" args="1.5 2.1 0 1.57 0 0 map tag_142" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_143" args="2.1 2.1 0 1.57 0 0 map tag_143" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_144" args="2.7 2.1 0 1.57 0 0 map tag_144" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_145" args="3.3 2.1 0 1.57 0 0 map tag_145" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_146" args="3.9 2.1 0 1.57 0 0 map tag_146" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_147" args="4.5 2.1 0 1.57 0 0 map tag_147" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_148" args="5.1 2.1 0 1.57 0 0 map tag_148" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_149" args="5.7 2.1 0 1.57 0 0 map tag_149" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_150" args="6.3 2.1 0 1.57 0 0 map tag_150" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_151" args="6.9 2.1 0 1.57 0 0 map tag_151" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_152" args="7.5 2.1 0 1.57 0 0 map tag_152" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_153" args="0.3 2.7 0 1.57 0 0 map tag_153" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_154" args="0.9 2.7 0 1.57 0 0 map tag_154" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_155" args="1.5 2.7 0 1.57 0 0 map tag_155" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_156" args="2.1 2.7 0 1.57 0 0 map tag_156" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_157" args="2.7 2.7 0 1.57 0 0 map tag_157" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_158" args="3.3 2.7 0 1.57 0 0 map tag_158" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_159" args="3.9 2.7 0 1.57 0 0 map tag_159" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_160" args="4.5 2.7 0 1.57 0 0 map tag_160" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_161" args="5.1 2.7 0 1.57 0 0 map tag_161" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_162" args="5.7 2.7 0 1.57 0 0 map tag_162" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_163" args="6.3 2.7 0 1.57 0 0 map tag_163" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_164" args="6.9 2.7 0 1.57 0 0 map tag_164" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_165" args="7.5 2.7 0 1.57 0 0 map tag_165" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_166" args="0.3 3.3 0 1.57 0 0 map tag_166" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_167" args="0.9 3.3 0 1.57 0 0 map tag_167" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_168" args="1.5 3.3 0 1.57 0 0 map tag_168" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_169" args="2.1 3.3 0 1.57 0 0 map tag_169" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_170" args="2.7 3.3 0 1.57 0 0 map tag_170" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_171" args="3.3 3.3 0 1.57 0 0 map tag_171" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_172" args="3.9 3.3 0 1.57 0 0 map tag_172" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_173" args="4.5 3.3 0 1.57 0 0 map tag_173" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_174" args="5.1 3.3 0 1.57 0 0 map tag_174" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_175" args="5.7 3.3 0 1.57 0 0 map tag_175" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_176" args="6.3 3.3 0 1.57 0 0 map tag_176" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_177" args="6.9 3.3 0 1.57 0 0 map tag_177" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_178" args="7.5 3.3 0 1.57 0 0 map tag_178" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_179" args="0.3 3.9 0 1.57 0 0 map tag_179" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_180" args="0.9 3.9 0 1.57 0 0 map tag_180" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_181" args="1.5 3.9 0 1.57 0 0 map tag_181" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_182" args="2.1 3.9 0 1.57 0 0 map tag_182" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_183" args="2.7 3.9 0 1.57 0 0 map tag_183" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_184" args="3.3 3.9 0 1.57 0 0 map tag_184" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_185" args="3.9 3.9 0 1.57 0 0 map tag_185" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_186" args="4.5 3.9 0 1.57 0 0 map tag_186" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_187" args="5.1 3.9 0 1.57 0 0 map tag_187" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_188" args="5.7 3.9 0 1.57 0 0 map tag_188" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_189" args="6.3 3.9 0 1.57 0 0 map tag_189" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_190" args="6.9 3.9 0 1.57 0 0 map tag_190" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_191" args="7.5 3.9 0 1.57 0 0 map tag_191" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_192" args="0.3 4.5 0 1.57 0 0 map tag_192" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_193" args="0.9 4.5 0 1.57 0 0 map tag_193" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_194" args="1.5 4.5 0 1.57 0 0 map tag_194" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_195" args="2.1 4.5 0 1.57 0 0 map tag_195" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_196" args="2.7 4.5 0 1.57 0 0 map tag_196" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_197" args="3.3 4.5 0 1.57 0 0 map tag_197" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_198" args="3.9 4.5 0 1.57 0 0 map tag_198" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_199" args="4.5 4.5 0 1.57 0 0 map tag_199" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_200" args="5.1 4.5 0 1.57 0 0 map tag_200" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_201" args="5.7 4.5 0 1.57 0 0 map tag_201" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_202" args="6.3 4.5 0 1.57 0 0 map tag_202" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_203" args="6.9 4.5 0 1.57 0 0 map tag_203" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_204" args="7.5 4.5 0 1.57 0 0 map tag_204" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_205" args="0.3 5.1 0 1.57 0 0 map tag_205" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_206" args="0.9 5.1 0 1.57 0 0 map tag_206" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_207" args="1.5 5.1 0 1.57 0 0 map tag_207" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_208" args="2.1 5.1 0 1.57 0 0 map tag_208" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_209" args="2.7 5.1 0 1.57 0 0 map tag_209" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_210" args="3.3 5.1 0 1.57 0 0 map tag_210" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_211" args="3.9 5.1 0 1.57 0 0 map tag_211" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_212" args="4.5 5.1 0 1.57 0 0 map tag_212" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_213" args="5.1 5.1 0 1.57 0 0 map tag_213" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_214" args="5.7 5.1 0 1.57 0 0 map tag_214" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_215" args="6.3 5.1 0 1.57 0 0 map tag_215" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_216" args="6.9 5.1 0 1.57 0 0 map tag_216" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_tag_217" args="7.5 5.1 0 1.57 0 0 map tag_217" />
+
+
+
+    <!-- 在rviz中显示-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rms1_bringup)/rviz/debug.rviz" required="true" />
+    
+</launch>

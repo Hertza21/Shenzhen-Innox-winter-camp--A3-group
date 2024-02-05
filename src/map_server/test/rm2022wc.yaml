@@ -1,0 +1,6 @@
+image: 2022sc_image.png
+resolution: 0.005068
+origin: [0, 0, 0]
+negate: 1
+occupied_thresh: 0.5
+free_thresh: 0.2

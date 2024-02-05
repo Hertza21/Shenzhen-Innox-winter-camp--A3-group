@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Run the map server -->
+    <node pkg="map_server" type="map_server" name="map_saver" args="$(find map_server)/test/2024wc_map.yaml"/>  
+
+    <!-- Run the static TF publisher from map to tags -->
+    <node pkg="static_transform" type="static_tf" name="static_tf"/>
+
+    <!-- 在rviz中显示-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find map_server)/rviz/rviz.rviz" required="true" />
+    
+</launch>

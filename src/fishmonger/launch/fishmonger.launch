@@ -1,0 +1,5 @@
+<launch>
+    <!-- Run the detect_fisher.py -->
+    <node pkg="fishmonger" type="detect_fisher.py" name="fishmonger" respawn="true" output="log" >
+    </node>
+</launch>

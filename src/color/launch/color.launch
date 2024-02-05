@@ -1,0 +1,5 @@
+<launch>
+    <!-- Run the color.py -->
+    <node pkg="color" type="Identify_Publisher.py" name="color" respawn="true" output="log" >
+    </node>
+</launch>

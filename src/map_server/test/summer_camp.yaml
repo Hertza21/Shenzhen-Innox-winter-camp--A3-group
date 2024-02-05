@@ -1,0 +1,6 @@
+image: summercamp_map.png
+resolution: 0.00483314154
+origin: [-0.1, -0.1, 0]
+negate: 1
+occupied_thresh: 0.5
+free_thresh: 0.2

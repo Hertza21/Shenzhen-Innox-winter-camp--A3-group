@@ -1,0 +1,11 @@
+<launch>
+    <!-- Run the color.py -->
+    <include file="$(find color)/launch/color.launch">
+    </include>
+
+    <!-- Run the control.cpp -->
+    <!-- <arg name="node_name" default="my_ctrl_node" /> -->
+    <node pkg="myctrl" type="myctrl" name="myctrl" respawn="true" output="log" ></node>
+    <node pkg="myctrl" type="direction" name="direction" respawn="true" output="screen" ></node>
+
+</launch>

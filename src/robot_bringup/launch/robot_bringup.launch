@@ -1,0 +1,24 @@
+<launch>
+       <!-- Run the EP base -->
+    <!-- <node pkg="mavlink2ros" type="robot_node" name="robot_node" respawn="true" output="screen" /> -->
+        <!-- Run the map server -->
+    <include file='$(find usb_cam)/launch/usb_cam.launch'/>
+    <node pkg="mavlink2ros" type="robot_node" name="robot_node" respawn="true" />
+    <include file='$(find map_server)/launch/innox2024_wc.launch' />
+    <include file='$(find odom_calib)/launch/odom_calib.launch' />
+    <include file="$(find robot_bringup)/launch/detect_tag.launch" />
+    <include file="$(find simple_planner)/launch/planner.launch" />
+
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="odom_base" args="1 1 0 0 0 0 odom base_link" /> -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_cam" args="0.149 0.06 0.002 -1.57 -0.7 -1.57 base_link camera_frame" /> -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_cam" args="0.165 0.075 0.322 -1.57 -0.7 -1.57 base_link camera_frame" />
+    <!-- Run the static TF publisher from base to cam ypr-->
+
+     <!-- Run the tag detecting nodes -->
+   <!-- Run the odom calibration node -->
+   <!-- <node pkg = "odom_calib" type="odom_calib_node" name="odom_calib" output="log"/> -->
+
+    <!-- Run the planning nodes -->
+    <!-- <include file="$(find rmep_bringup)/launch/planner.launch" /> -->
+
+</launch>
